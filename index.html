@@ -1,0 +1,591 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>فلير بوت &mdash; البوت الأول المجاني في الديسكورد</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="FlareBot - Made By 1MoHqMeD_" />
+		<meta name="keywords" content="FlareBot, Flare, Discrd Flare Bot," />
+		<meta name="author" content="1MoHqMeD_" />
+
+  <!-- 
+
+	 -->
+
+  <!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<link href="https://fonts.googleapis.com/css2?family=Tajawal&display=swap" rel="stylesheet">	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Simple Line Icons -->
+	<link rel="stylesheet" href="css/simple-line-icons.css">
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+	<!-- 
+	Default Theme Style 
+	You can change the style.css (default color purple) to one of these styles
+	
+	1. pink.css
+	2. blue.css
+	3. turquoise.css
+	4. orange.css
+	5. lightblue.css
+	6. brown.css
+	7. green.css
+
+	-->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Styleswitcher ( This style is for demo purposes only, you may delete this anytime. ) -->
+	<link rel="stylesheet" id="theme-switch" href="css/style.css">
+	<!-- End demo purposes only -->
+
+
+	<style>
+	/* For demo purpose only */
+	
+	/* For Demo Purposes Only ( You can delete this anytime :-) */
+	#colour-variations {
+		padding: 10px;
+		-webkit-transition: 0.5s;
+	  	-o-transition: 0.5s;
+	  	transition: 0.5s;
+		width: 140px;
+		position: fixed;
+		left: 0;
+		top: 100px;
+		z-index: 999999;
+		background: #fff;
+		/*border-radius: 4px;*/
+		border-top-right-radius: 4px;
+		border-bottom-right-radius: 4px;
+		-webkit-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+		-moz-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+		-ms-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+		box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+	}
+	#colour-variations.sleep {
+		margin-left: -140px;
+	}
+	#colour-variations h3 {
+		text-align: center;;
+		font-size: 11px;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+		color: #777;
+		margin: 0 0 10px 0;
+		padding: 0;;
+	}
+	#colour-variations ul,
+	#colour-variations ul li {
+		padding: 0;
+		margin: 0;
+	}
+	#colour-variations li {
+		list-style: none;
+		display: inline;
+	}
+	#colour-variations li a {
+		width: 20px;
+		height: 20px;
+		position: relative;
+		float: left;
+		margin: 5px;
+	}
+	#colour-variations li a[data-theme="style"] {
+		background: #6173f4;
+	}
+	#colour-variations li a[data-theme="pink"] {
+		background: #f64662;
+	}
+	#colour-variations li a[data-theme="blue"] {
+		background: #2185d5;
+	}
+	#colour-variations li a[data-theme="turquoise"] {
+		background: #00b8a9;
+	}
+	#colour-variations li a[data-theme="orange"] {
+		background: #ff6600;
+	}
+	#colour-variations li a[data-theme="lightblue"] {
+		background: #5585b5;
+	}
+	#colour-variations li a[data-theme="brown"] {
+		background: #a03232;
+	}
+	#colour-variations li a[data-theme="green"] {
+		background: #65d269;
+	}
+
+	.option-toggle {
+		position: absolute;
+		right: 0;
+		top: 0;
+		margin-top: 5px;
+		margin-right: -30px;
+		width: 30px;
+		height: 30px;
+		background: #f64662;
+		text-align: center;
+		border-top-right-radius: 4px;
+		border-bottom-right-radius: 4px;
+		color: #fff;
+		cursor: pointer;
+		-webkit-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+		-moz-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+		-ms-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+		box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+	}
+	.option-toggle i {
+		top: 2px;
+		position: relative;
+	}
+	.option-toggle:hover, .option-toggle:focus, .option-toggle:active {
+		color:  #fff;
+		text-decoration: none;
+		outline: none;
+	}
+	</style>
+	<!-- End demo purposes only -->
+
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+	<body>
+	<header role="banner" id="fh5co-header">
+			<div class="container">
+				<!-- <div class="row"> -->
+			    <nav class="navbar navbar-default">
+		        <div class="navbar-header">
+		        	<!-- Mobile Toggle Menu Button -->
+					<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
+		          	<a class="navbar-brand" href="index.html">Flare Bot</a> 
+		        </div>
+		        <div id="navbar" class="navbar-collapse collapse">
+		          <ul class="nav navbar-nav navbar-right">
+		            <li class="active"><a href="#" data-nav-section="home"><span>الرئيسية</span></a></li>
+		            <li><a href="#" data-nav-section="about"><span>لماذا فلير بوت ؟</span></a></li>
+		            <li><a href="#" data-nav-section="services"><span>الخدمات</span></a></li>
+		            <li><a href="#" data-nav-section="features"><span>المميزات</span></a></li>
+		            <li><a href="#" data-nav-section="pricing"><span>فلير بوت المدفوع</span></a></li>
+					<li><a href="#" data-nav-section="press"><span>اضف فلير بوت</span></a></li>
+					<li><a href="ProtectionCommands.html"><span>الاوامر</span></a></li>
+
+		          </ul>
+		        </div>
+			    </nav>
+			  <!-- </div> -->
+		  </div>
+	</header>
+
+	<div id="slider" data-section="home">
+		<div class="owl-carousel owl-carousel-fullwidth">
+			<!-- You may change the background color here. -->
+		    <div class="item" style="background-image: url(https://media.discordapp.net/attachments/718868234647896156/754096959861817394/ezgif.com-gif-maker_2.gif?width=1063&height=598);">
+		    	<div class="container" style="position: relative;">
+		    		<div class="row">
+					    <div class="col-md-7 col-sm-7">
+			    			<div class="fh5co-owl-text-wrap">
+						    	<div class="fh5co-owl-text">
+						    		<h1 class="fh5co-lead to-animate">فلير بوت</h1>
+									<h6 class="fh5co-sub-lead to-animate">فلير بوت هو بوت مجاني 100%, يحتوي على كثير من الخصائص المميزة التي من الصعب ايجادها في اي بوت مجاني اخر.</h6>
+									<a class="to-animate-2"><a href="https://discord.com/oauth2/authorize?client_id=750557627267809360&scope=bot&permissions=2146958847" target="_blank" class="btn btn-primary btn-lg">اضف فلير بوت</a></a>
+									<a class="to-animate-1"><a href="https://discord.gg/byHRwMr" target="_blank" class="btn btn-primary2 btn-lg">سيرفر الدعم الفني</a></a>
+
+						    	</div>
+						    </div>
+					    </div>
+					    <div class="col-md-4 col-md-push-1 col-sm-4 col-sm-push-1 iphone-image">
+					    </div>
+
+		    		</div>
+		    	</div>
+		    </div>
+			<!-- You may change the background color here.  -->
+		  
+		    <div class="item" style="background-image: url(https://media.discordapp.net/attachments/718868234647896156/754096959861817394/ezgif.com-gif-maker_2.gif?width=1063&height=598);">
+		    	<div class="overlay"></div>
+		    	<div class="container" style="position: relative;">
+		    		<div class="row">
+		    			<div class="col-md-8 col-md-offset-2 text-center">
+		    				<div class="fh5co-owl-text-wrap">
+						    	<div class="fh5co-owl-text">
+		    						<h1 class="fh5co-lead to-animate">حان الوقت لاضافة فلير بوت !</h1>
+									<h2 class="fh5co-sub-lead to-animate">قم باضافة فلير بوت واستمتع بتجربة جديدة !</h3>
+									<a class="to-animate-2"><a href="https://discord.com/oauth2/authorize?client_id=750557627267809360&scope=bot&permissions=2146958847" target="_blank" class="btn btn-primary btn-lg">اضف فلير بوت الان !</a></a>
+									<a class="to-animate-2"><a href="" target="_blank" class="btn btn-primary2 btn-lg">الأوامر</a></a>
+
+								</div>
+							</div>
+		    			</div>
+		    		</div>
+		    	</div>
+		    </div>
+
+		</div>
+	</div>
+
+	<div id="fh5co-about-us" data-section="about">
+		<div class="container">
+			<div class="row row-bottom-padded-lg" id="about-us">
+				<div class="col-md-12 section-heading text-center">
+					<h2 class="to-animate">لماذا فلير بوت ؟</h2>
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 to-animate">
+							<h3>فلير بوت هو بوت بسيط يحتوي على كثير من الانظمة المتطورة, مثل نظام حماية السيرفر من الادارة الغادرة والهاكرز, والمزيد...</h3>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-8 to-animate">
+					<img src="https://media.discordapp.net/attachments/718868234647896156/754092401487904799/unknown.png" class="img-responsive img-rounded" >
+				</div>
+				<div class="col-md-4 to-animate">
+					<h2>FlareBot</h2>
+					<p>فلير بوت يحتوي على كثير من المميزات الغير موجودة في اي بوت اخر, مثل نظام الحماية العصري والمتطور, ونظام الاقتراحات الخاص بالرموز, والمزيد, كل ما عليك لفتح قائمة الاوامر, هو الذهاب الى الشريط العلوي في الموقع, ثم اختار الأوامر , وقم بتصفح الاوامر</p>
+					<p><a href="https://discord.com/oauth2/authorize?client_id=750557627267809360&scope=bot&permissions=2146958847" class="btn btn-primary">اضفه الان !</a></p>
+				</div>
+			</div>
+			<div class="row" id="team">
+				<div class="col-md-12 section-heading text-center to-animate">
+					<h2>المطورين</h2>
+				</div>
+				<div class="col-md-12">
+					<div class="row row-bottom-padded-lg">
+						<div class="col-md-4 text-center to-animate">
+							<div class="person">
+								<img src="https://images-ext-1.discordapp.net/external/gTCe3sWoR7eqS22alL3tpFbSUJdVqSyt4CLhVFhN_Eg/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/717538496629440543/27ee182f6dbe10235d4050b878da46bc.webp" class="img-responsive img-rounded" alt="Person">
+								<h3 class="name">DevilRena_</h3>
+								<div class="position">Support Server Opreator</div>
+								<p>Hi c.c xD</p>
+								<ul class="social social-circle">
+									<li><a href="#"><i class="icon-twitter"></i></a></li>
+									<li><a href="#"><i class="icon-linkedin"></i></a></li>
+									<li><a href="#"><i class="icon-instagram"></i></a></li>
+									<li><a href="#"><i class="icon-github"></i></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-4 text-center to-animate">
+							<div class="person">
+								<img src="https://images-ext-2.discordapp.net/external/ikt4S1JYliCnFODqLkWOkDkFRjmEZqZ0ped_jP_1UZk/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/359802002416467978/10b7ac2ea10856fa989d4e22d0a6ce49.webp?width=300&height=300" class="img-responsive img-rounded" alt="Person">
+								<h3 class="name">1MoHqMeD_</h3>
+								<div class="position">مطور البوت, مطور موقع البوت</div>
+								<p>اسمي محمد, عمري 15 سنة, احب برمجة الديسكورد والبوتات, احببت ان اصنع بوت يحل الكثير من المشاكل, من اهمهم مشكلة الحماية التي يعاني بسببها الكثير من السيرفرات, بسبب نقص الحماية والتهكير</p>
+								<ul class="social social-circle">
+									<li><a href="https://www.youtube.com/channel/UCa_78jNuc8aTCVFw6sBQnAw?view_as=subscriber" target="_blank"><i class="icon-play"></i></a></li>
+									<li><a href="https://www.facebook.com/M7mdProMaster" target="_blank"><i class="icon-facebook"></i></a></li>
+									<li><a href="https://www.instagram.com/_meismohamed/" target="_blank"><i class="icon-instagram"></i></a></li>
+									<li><a href="http://github.com/flareDiscordBot" target="_blank"><i class="icon-github"></i></a></li>
+								</ul>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="fh5co-our-services" data-section="services">
+		<div class="container">
+			<div class="row row-bottom-padded-sm">
+				<div class="col-md-12 section-heading text-center">
+					<h2 class="to-animate">الخدمات التي يقدمها فلير بوت</h2>
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 to-animate">
+							<h3>...</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="box to-animate">
+						<div class="icon "><span><img src="https://cdn.discordapp.com/attachments/750609333246754856/754442696763899974/ezgif-4-e71fdab70b41.gif">></span></div>
+						<h3>مجاني 100%</h3>
+						<p>لا تقلق, فلير بوت مجاني 100%, توجد نسخة مدفوعة, ولكن اضمن لكم جميع المميزات التي يحتاجها اي سيرفر موجودة بالبوت المجاني
+						</p>
+					</div>
+					<div class="box to-animate">
+						<div class="icon "><span><img src="https://cdn.discordapp.com/attachments/750609333246754856/754444818184142899/ezgif.com-resize_12.gif"></i></span></div>
+						<h3>حماية على مدار 24 ساعة</h3>
+						<p>لا داعي للقلق بشأن الادارة الغادرة والهاكرز, فلير بوت يعمل على حماية سيرفرك على مدار 24 ساعة, لن يكون هناك اي تخريب بمشيئة الله</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="box to-animate">
+						<div class="icon "><span><img src="https://cdn.discordapp.com/attachments/750609333246754856/754442696449589398/ezgif.com-resize_11.gif"></i></span></div>
+						<h3>نظام اقتراحات متميز</h3>
+						<p>يحتوي فلير بوت على نظام اقتراحات مطور وعصري, حيث يمكن للعضو الاقتراح ثم الرد عليه من قبل الاداري</p>
+					</div>
+					<div class="box to-animate">
+						<div class="icon "><span><img src="https://cdn.discordapp.com/attachments/750609333246754856/754447298112782378/ezgif.com-resize_13.gif">></i></span></div>
+						<h3>احصائيات الالعاب</h3>
+						<p>يمكنك معرفة احصائيات اي شخص في عدد من الالعاب عن طريق فلير بوت, الالعاب المتوفرة حاليا هي ماين كرافت وفورت نايت</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="box to-animate">
+						<div class="icon "><span><img src="https://cdn.discordapp.com/attachments/750609333246754856/754451834394902719/ezgif.com-resize_14.gif"></i></span></div>
+						<h3>Soon</h3>
+						<p>Coming soon...</p>
+					</div>
+					<div class="box to-animate">
+						<div class="icon "><span><img src="https://cdn.discordapp.com/attachments/750609333246754856/754451834394902719/ezgif.com-resize_14.gif"></i></span></div>
+						<h3>Soon</h3>
+						<p>Coming soon...</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div id="fh5co-features" data-section="features">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 section-heading text-center">
+					<h2 class="single-animate animate-features-1">مميزات فلير بوت</h2>
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 single-animate animate-features-2">
+							<h3>نحن نعمل على راحتك .</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row row-bottom-padded-sm">
+				<div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service to-animate">
+					<img src="https://cdn.discordapp.com/attachments/750609333246754856/754457309538943037/ezgif.com-resize_15.gif">
+					<div class="fh5co-desc">
+						<h3>نظام حماية متطور وعصري</h3>
+						<p>لدى فلير بوت نظام حماية متطور وعصري, يعمل على حماية سيرفرك من الادارة الغادرة والهاكرز والمتطفلين, لا تقلق بشأن سيرفرك بعد اليوم. </p>
+					</div>	
+				</div>
+				<div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service to-animate">
+<img src="https://cdn.discordapp.com/attachments/750609333246754856/754459982199783474/ezgif.com-resize_17.gif">
+					<div class="fh5co-desc">
+						<h3>نظام اقتراحات جديد</h3>
+						<p>يحتوي فلير بوت على نظام اقتراحات للسيرفرات, يوفر للاعضاء امكانية ارسال اقتراحات للادارة بروم معين, ثم يقوم الاداري بالرد على الاقتراح عبر الكود الخاص به</p>
+					</div>
+				</div>
+				<div class="clearfix visible-sm-block visible-xs-block"></div>
+				<div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service to-animate">
+<img src="https://cdn.discordapp.com/attachments/750609333246754856/754461840439771226/ezgif.com-resize_18.gif">
+					<div class="fh5co-desc">
+						<h3>احصائيات في الالعاب</h3>
+						<p>مع فلير بوت, بامكانك الاستعلام عن احصائيات اي حساب في بعض الالعاب, يوجد في البوت حاليا لعبتين (Minecraft, Fortnite)</p>
+					</div>
+				</div>
+			
+		</div>
+	</div>
+
+
+	<div id="fh5co-pricing" data-section="pricing">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 section-heading text-center">
+					<h2 class="single-animate animate-pricing-1">النسخ المدفوعة</h2>
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 subtext single-animate animate-pricing-2">
+							<h3>توجد 3 نسخ مدفوعة من فلير بوت, بمميزات متعددة</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3 col-sm-6">
+					<div class="price-box to-animate">
+						<h2 class="pricing-plan">FlareBot Plus</h2>
+						<div class="price"><sup class="currency">$</sup>3<small>/month</small></div>
+						<p>ملاحظة : يتم الدفع عن طريق بايبال فقط</p>
+						<hr>
+						<ul class="pricing-info">
+							<li>✿ ميزة الفاعل في اللوق ✿</li>
+							<li>✿ ميزة اختصار الروابط ✿</li>
+							<li>✿ وضع اختصارات للاوامر ✿</li>
+							<li>✿ تنور البلس يا ملك :) ✿</li>
+						</ul>
+						<a href="#" class="btn btn-default btn-sm">شراء</a>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="price-box to-animate">
+						<h2 class="pricing-plan">FlareBot Prime</h2>
+						<div class="price"><sup class="currency">$</sup>5<small>/month</small></div>
+						<p>ملاحظة : يتم الدفع عن طريق بايبال فقط</p>
+						<hr>
+						<ul class="pricing-info">
+							<li>✿ جميع مميزات بوت PLUS ✿</li>
+							<li>✿ امر فك البان عن الجميع ✿</li>
+							<li>✿ خاصية تسجيل المحادثات الصوتية بالسيرفر (SOON) ✿</li>
+							<li>✿ تنور البرايم يا ملك :) ✿</li>
+						</ul>
+						<a href="#" class="btn btn-default btn-sm">شراء</a>
+					</div>
+				</div>
+				<div class="clearfix visible-sm-block"></div>
+				<div class="col-md-3 col-sm-6 to-animate">
+					<div class="price-box popular">
+						<div class="popular-text">افضل قيمة</div>
+						<h2 class="pricing-plan">FlareBot Premium</h2>
+						<div class="price"><sup class="currency">$</sup>50<small>/year</small></div>
+						<p>ملاحظة : يتم الدفع عن طريق بايبال فقط</p>
+						<hr>
+						<ul class="pricing-info">
+							<li>✿ جميع مميزات بوت PLUS ✿</li>
+							<li>✿ جميع مميزات بوت Prime ✿</li>
+							<li>✿ امكانية تغيير اسم البوت ✿</li>
+							<li>✿ امكانية تغيير صورة او افاتار البوت ✿</li>
+							<li>✿ امكانية تغيير حالة البوت ✿</li>
+							<li>✿ تنور البريميوم يا ملك :) ✿</li>
+
+						</ul>
+						<a href="#" class="btn btn-primary btn-sm">شراء</a>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="price-box to-animate">
+						<h2 class="pricing-plan">FlareBot Premium</h2>
+						<div class="price"><sup class="currency">$</sup>9<small>/month</small></div>
+						<p>ملاحظة : يتم الدفع عن طريق بايبال فقط</p>
+						<hr>
+						<ul class="pricing-info">
+							<li>✿ جميع مميزات بوت PLUS ✿</li>
+							<li>✿ جميع مميزات بوت Prime ✿</li>
+							<li>✿ امكانية تغيير اسم البوت ✿</li>
+							<li>✿ امكانية تغيير صورة او افاتار البوت ✿</li>
+							<li>✿ امكانية تغيير حالة البوت ✿</li>
+							<li>✿ تنور البريميوم يا ملك :) ✿</li>
+						</ul>
+						<a href="#" class="btn btn-default btn-sm">شراء</a>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+
+	<div id="fh5co-press" data-section="press">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 section-heading text-center">
+					<h2 class="single-animate animate-press-1">التحديثات الجديدة</h2>
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 subtext single-animate animate-press-2">
+							<h3>هنا يتم نشر التحديثات الجديدة</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<!-- Press Item -->
+					<div class="fh5co-press-item to-animate">
+						<div class="fh5co-press-img" style="background-image: url(images/img_7.jpg)">
+						</div>
+						<div class="fh5co-press-text">
+							<h3 class="h2 fh5co-press-title">نظام الحماية <span class="fh5co-border"></span></h3>
+							<p>تمت اضافة نظام حماية بفلير بوت, الان لا داعي للقلق على سيرفرك</p>
+							<p><a href="#" class="btn btn-primary btn-sm">المزيد...</a></p>
+						</div>
+					</div>
+					<!-- Press Item -->
+				</div>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+	
+
+	<footer id="footer" role="contentinfo">
+		<div class="container">
+			<div class="row row-bottom-padded-sm">
+				<div class="col-md-12">
+					<p class="copyright text-center">&copy; 2020 <a href="index.html">فلير بوت</a>. جميع الحقوق محفوظة. <br> تم تصميم الموقع من قبل <a>1MoHqMeD_</a> </p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<ul class="social social-circle">
+						<li><a href="http://github.com/flareDiscordBot"><i class="icon-github"></i></a></li>
+						<li><a href="https://www.facebook.com/M7mdProMaster"><i class="icon-facebook"></i></a></li>
+						<li><a href="https://www.youtube.com/channel/UCa_78jNuc8aTCVFw6sBQnAw?view_as=subscriber"><i class="icon-youtube"></i></a></li>
+						<li><a href="https://www.instagram.com/_meismohamed/"><i class="icon-instagram"></i></a></li>		
+								</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+	
+	<!-- For demo purposes Only ( You may delete this anytime :-) -->
+	
+	<!-- End demo purposes only -->
+
+	
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Owl Carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+
+	<!-- For demo purposes only styleswitcher ( You may delete this anytime ) -->
+	<script src="js/jquery.style.switcher.js"></script>
+	<script>
+	$(function(){
+		$('#colour-variations ul').styleSwitcher({
+			defaultThemeId: 'theme-switch',
+			hasPreview: false,
+			cookie: {
+	          	expires: 30,
+	          	isManagingLoad: true
+	      	}
+		});	
+		$('.option-toggle').click(function() {
+			$('#colour-variations').toggleClass('sleep');
+		});
+	});
+	</script>
+	<!-- End demo purposes only -->
+
+	<!-- Main JS (Do not remove) -->
+	<script src="js/main.js"></script>
+
+	</body>
+</html>
